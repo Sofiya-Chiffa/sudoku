@@ -32,7 +32,21 @@ int main()
     }
     
     for (int k;k<2;++k){
-        for (int n;n<3;++n){
+        int a1 = rand() % 3;
+        int b1 = (a1 + 1) % 3;
+        int b2 = (a1 + 2) % 3;
+        int me = 0;
+        for (int i=0;i<9;++i){
+            for (int j=0;j<3;++j){
+                me = arr_pc[i][j + (b1 * 3)];
+                arr_pc[i][j + (b1 * 3)] = arr_pc[i][j + (b2 * 3)];
+                arr_pc[i][j + (b2 * 3)] = me;
+            }
+        }
+    }
+    
+    for (int k;k<2;++k){
+        for (int n=0;n<3;++n){
             int a1 = rand() % 3;
             int b1 = (a1 + 1) % 3;
             int b2 = (a1 + 2) % 3;
@@ -44,6 +58,21 @@ int main()
             }
         }
     }
+    
+    for (int k;k<2;++k){
+        for (int n=0;n<3;++n){
+            int a1 = rand() % 3;
+            int b1 = (a1 + 1) % 3;
+            int b2 = (a1 + 2) % 3;
+            int me = 0;
+            for (int j=0;j<9;++j){
+                me = arr_pc[j][n * 3 + b1];
+                arr_pc[j][n * 3 + b1] = arr_pc[j][n * 3 + b2];
+                arr_pc[j][n * 3 + b2] = me;
+            }
+        }
+    }
+    
     
     
     
