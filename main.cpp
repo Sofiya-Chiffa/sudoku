@@ -14,7 +14,7 @@ void print(int arr[9][9], int us_arr[9][9]) {
                 cout << "  ";
             }
             if (arr[i][j] != 0 and arr[i][j] == us_arr[i][j]) {
-                cout << "\xf9" << arr[i][j] << "\xf9";
+                cout << " " << arr[i][j] << " ";
             }
             else if (arr[i][j] != 0) {
                 cout << " " << arr[i][j] << " ";
@@ -45,17 +45,17 @@ int cheak(int arr[9][9]) {
              k[arr[i][j] - 1] = 1;
         }
     }
-    for (int o = 0; o < 9; ++o) {
-        int k[9] = {};
-        for (int i = 0; i < 3; ++i) {
-            for (int j = 0; j < 3; ++j) {
-                if (k[arr[i + o][j] - 1] != 0) {
-                    return 1;
-                }
-                k[arr[i][j] - 1] = 1;
-            }
-        }
-    }
+    //for (int o = 0; o < 9; ++o) {
+     //   int k[9] = {};
+    //    for (int i = 0; i < 3; ++i) {
+     //       for (int j = 0; j < 3; ++j) {
+      //          if (k[arr[i + o][j] - 1] != 0) {
+   //                 return 1;
+  //              }
+   //             k[arr[i][j] - 1] = 1;
+     //       }
+     //  }
+   //}
     return 0;
 }
 
@@ -132,7 +132,7 @@ int main()
     int k = 60;
     int n;
     for (int i = 0; i < 9; ++i) {
-        for (int j = 0; j < 7; ++j) {
+        for (int j = 0; j < 1; ++j) {
             n = rand() % 9;
             if (arr[i][n] != 0) {
                 k -= 1;
