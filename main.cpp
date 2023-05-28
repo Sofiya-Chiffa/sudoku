@@ -161,7 +161,7 @@ int main()
     while (cheak(arr)) {
         cout << "\n\n";
         int n, m, l;
-        cout << "please, enter x y number\n";
+        cout << "please, enter y x number\n";
         cin >> n >> m >> l;
         if (n > 0 && n < 10 && n > 0 && n < 10 && n > 0 && n < 10 && us_arr[n - 1][m - 1] == 0) {
             arr[n - 1][m - 1] = l;
