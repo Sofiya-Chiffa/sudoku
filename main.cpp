@@ -132,7 +132,7 @@ int main()
     int k = 60;
     int n;
     for (int i = 0; i < 9; ++i) {
-        for (int j = 0; j < 1; ++j) {
+        for (int j = 0; j < 7; ++j) {
             n = rand() % 9;
             if (arr[i][n] != 0) {
                 k -= 1;
