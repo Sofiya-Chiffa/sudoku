@@ -150,7 +150,7 @@ int main()
 
 
     
-    cout << "numbers with dots is temperary\n";
+    cout << "numbers with dots are unchangeable\n";
     cout << "example: \xf9\9\xf9\n\n";
     cout << "x = 1 and y = 1 is up left corner and x = 9 and y = 9 is down right corner\n\n";
     cout << "good luck! enjoy!\n";
